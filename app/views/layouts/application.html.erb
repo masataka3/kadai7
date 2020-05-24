@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookers</title>
+    <%= csrf_meta_tags %>
+
+
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= render 'layouts/header' %>
+
+  	<div class='body'>
+      <div class='container'>
+        
+        
+        <p id="notice"><%= notice %></p>
+      
+      	<%= yield %>
+      </div>
+    </div>
+     <script src="https://maps.googleapis.com/maps/api/js?key=XAIzaSyDW8p3lXQ3pS_fUykUZxe0UgQP83rypl5o"></script>
+
+    <%= render 'layouts/footer' %>
+
+  </body>
+</html>
